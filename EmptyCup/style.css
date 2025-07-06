@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle, #000010 0%, #000000 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+canvas {
+  display: block;
+}
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 16px;
+  border-radius: 12px;
+  color: white;
+  z-index: 1;
+  max-height: 90vh;
+  overflow-y: auto;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: bold;
+}
+input[type="range"] {
+  width: 180px;
+  accent-color: #00bfff;
+}
+button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #00bfff, #1e90ff);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-right: 6px;
+}
+button:hover {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.98);
+}
